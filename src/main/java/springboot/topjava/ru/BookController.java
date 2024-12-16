@@ -14,7 +14,6 @@ public class BookController {
     @PostMapping("/get")
     public BaseResponse get(@RequestParam(value = "id") Long id) {
         final BaseResponse response;
-
         response = new BaseResponse("Найдена книга с ID=" + id, 200);
 
         return response;
